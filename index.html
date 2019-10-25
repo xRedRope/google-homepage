@@ -4,21 +4,43 @@
     </head>
 
     <body>
-        <div class="titre">
-            <img src="./googlelogo.png" alt="google" >
-        </div>
+        <nav class="bt">
+            <ul>
+                <li><a href="#">Gmail</a></li>
+                <li><a href="#">Images</a></li>
+                <li><a href="#">Connexion</a></li>
+            </ul>
+        </nav>
+       
+        <main>
+            <div class="lo">
+                <img src="googlelogo.png" alt="logo">
+            </div>
+            <form action="/search.html" method="POST">
+                <input type="search" name="search" required>
+                <input type="submit" value="Recherche Google">
+                <input type="submit" value="J'ai de la chance">
+            </form>
 
-        <div class="recherche">
+        </main>
 
-        </div>
-
-        <div class="button">
-
-        </div>
-
-        <div class="button">
-
-        </div>
+        <footer>
+            <div class="france">
+                <p>France</p>
+            </div>
+            <ul class="info-left">
+                <li><a href="#">Publicité</a></li>
+                <li><a href="#">Entrprise</a></li>
+                <li><a href="#">À propos</a></li>
+                <li><a href="#">Comment fonctionne la recherche google ?</a></li>
+            </ul>
+            <ul class="info-right">
+                <li><a href="#">Info consommateurs</a></li>
+                <li><a href="#">Confidentialité</a></li>
+                <li><a href="#">Conditions</a></li>
+                <li><a href="#">Paramètres</a></li>
+            </ul>
+        </footer>
 
     </body>
 </html>
