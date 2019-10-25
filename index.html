@@ -1,27 +1,31 @@
 <html>
     <head>
         <title>Google</title>
+        <link rel="stylesheet" href="style.css" type="text/css">
     </head>
 
     <body>
-        <nav class="bt">
-            <ul>
-                <li><a href="#">Gmail</a></li>
+        <nav>
+            <ul class="navbar">
+                <li id="mail"><a href="#">Gmail</a></li>
                 <li><a href="#">Images</a></li>
-                <li><a href="#">Connexion</a></li>
+                <li id="connexion"><a href="#">Connexion</a></li>
             </ul>
         </nav>
        
         <main>
-            <div class="lo">
-                <img src="googlelogo.png" alt="logo">
+            <div class="principal">
+                <div class="logo">
+                    <img src="googlelogo.png" alt="logo">
+                </div>
+                    <form action="search.html" method="POST">
+                    <input id="recherche" type="search" name="search" required>
+                    <div class="valider">
+                        <input id="google" type="submit" value="Recherche Google">
+                        <input id ="chance" type="submit" value="J'ai de la chance">
+                    </div>
+                </form>
             </div>
-            <form action="/search.html" method="POST">
-                <input type="search" name="search" required>
-                <input type="submit" value="Recherche Google">
-                <input type="submit" value="J'ai de la chance">
-            </form>
-
         </main>
 
         <footer>
